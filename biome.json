@@ -1,0 +1,15 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"overrides": [
+		{
+			"includes": ["src/**"],
+			"linter": {
+				"rules": {
+					"correctness": { "noUnresolvedImports": "error" },
+					"nursery": { "noFloatingPromises": "error" },
+					"suspicious": { "noConsole": "error" }
+				}
+			}
+		}
+	]
+}
